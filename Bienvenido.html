@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Pagos - Bienvenida</title>
+  <style>
+    /* Reseteo de márgenes y fuente base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo del cuerpo y fondo */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #e0e7ff; /* Fondo azul claro */
+      color: #0a0a6e;
+    }
+
+    /* Contenedor principal */
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      position: relative;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    /* Estilo para los logos en las esquinas */
+    .logo-left, .logo-right {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+    }
+
+    .logo-left {
+      top: 10px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Texto al lado del logo izquierdo */
+    .logo-left-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      margin-left: 10px;
+    }
+
+    .logo-right {
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Logo central encima del mensaje */
+    .logo-top {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Títulos y texto */
+    h1 {
+      color: #0a0a6e;
+      font-size: 28px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .message {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    /* Botón */
+    .btn-next {
+      display: inline-block;
+      background-color: #0a0a6e;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-next:hover {
+      background-color: #1e3a8a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo en la esquina superior izquierda con texto al lado -->
+    <div class="logo-left">
+      <img src="https://yt3.googleusercontent.com/KM_93rXyLsHWQZuWTDy-vSfXPvi9niyb9M8y65B_bInnWIDceDJrs-ud8uHN1FiPDefYJ3mH0rk=s900-c-k-c0x00ffffff-no-rj" alt="Logo Izquierda" style="width: 80px; height: 80px;">
+    </div>
+
+    <!-- Logo en la esquina superior derecha con tamaño igual al izquierdo -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsf28n8DqnUkl02elCpAvcde_75Z8E7lAQjw&s" alt="Logo Derecha" class="logo-right" style="width: 80px; height: 80px;">
+
+    <!-- Logo principal arriba del mensaje de bienvenida -->
+    <img src="https://matehuala.tecnm.mx/SEPRET/Assets/img/favicon.png" alt="Logo Principal" class="logo-top">
+
+    <h1>¡Bienvenido!</h1>
+    <p class="message">
+      En esta plataforma podrás realizar pagos para los distintos servicios del Instituto Tecnológico de Matehuala.
+      <br><br>
+      En caso de tener algún problema con la plataforma, puedes comunicarte al correo: <a href="mailto:comentarios@matehuala.tecnm.mx" style="color: #0a0a6e; font-weight: bold;">comentarios@matehuala.tecnm.mx</a>
+    </p>
+    <a href="#" class="btn-next">Siguiente</a>
+  </div>
+</body>
+</html>
+
+
+

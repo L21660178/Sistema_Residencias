@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residencias - Inicio de Sesión</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #d3d3d3;
+      position: relative;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .logo-left {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 300px;
+      opacity: 0.9;
+    }
+
+    .logo-top {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #0a0a6e;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      color: #0a0a6e;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .input-container {
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .input-container input {
+      width: 100%;
+      padding: 10px 40px;
+      border: 2px solid #0a0a6e;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .input-container img {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      height: 20px;
+    }
+
+    .btn-ingresar {
+      display: inline-block;
+      background-color: #0a0a6e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .registro {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .registro a {
+      color: #0a0a6e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor principal de inicio de sesión -->
+  <div class="container">
+    <!-- Logo del Tecnológico arriba del título -->
+    <img src="https://matehuala.tecnm.mx/SEPRET/Assets/img/favicon.png" alt="Logo Tecnológico" class="logo-top">
+    <h1>Residencias</h1>
+    <p class="subtitulo">Iniciar sesión</p>
+
+    <div class="input-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Icono Usuario">
+      <input type="text" placeholder="Usuario">
+    </div>
+
+    <div class="input-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Icono Contraseña">
+      <input type="password" placeholder="Contraseña">
+    </div>
+
+    <button class="btn-ingresar">Ingresar</button>
+
+    <div class="registro">
+      <p>¿No tienes cuenta? <a href="#">Registrate</a></p>
+    </div>
+  </div>
+</body>
+</html>
+

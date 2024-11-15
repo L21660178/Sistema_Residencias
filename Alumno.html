@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencias</title>
+    <link rel="icon" href="https://matehuala.tecnm.mx/SEPRET/Assets/img/favicon.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            background-color: #0033a0;
+            color: white;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sidebar img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .sidebar h2 {
+            margin-top: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .sidebar .menu {
+            margin-top: 20px;
+            list-style-type: none;
+            width: 100%;
+        }
+
+        .sidebar .menu li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .sidebar .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .sidebar .menu li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        .main-content {
+            flex: 1;
+            background-color: #e0e0e0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-content .header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .main-content .header img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .main-content .header button {
+            background-color: #0033a0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .main-content .header button:hover {
+            background-color: #00257a;
+        }
+
+        .main-content .add-project-btn {
+            background-color: #0033a0;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .main-content .add-project-btn:hover {
+            background-color: #00257a;
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .main-content {
+                padding: 10px;
+            }
+
+            .main-content .header button, .main-content .add-project-btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="https://matehuala.tecnm.mx/SEPRET/Assets/img/favicon.png" alt="Logo">
+            <h2>RESIDENCIAS</h2>
+            <ul class="menu">
+                <li>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 24px; margin-right: 8px;">👤</span>
+                        <span>Alumno ▼</span>
+                    </div>
+                </li>
+                <li><a href="#">Mis Proyectos</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <img src="https://matehuala.tecnm.mx/SEPRET/Assets/img/favicon.png" alt="Projects Icon">
+                <button>MIS PROYECTOS</button>
+            </div>
+            <button class="add-project-btn">+ AGREGAR PROYECTO</button>
+        </div>
+    </div>
+</body>
+</html>
